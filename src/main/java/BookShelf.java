@@ -22,12 +22,16 @@ public class BookShelf {
     static String notes;
     
     //bookshelf array
-    static ArrayList<String> bookshelf;
+    static ArrayList<String> titlelist;
+    static ArrayList<String> authorlist;
+    static ArrayList<Integer> pagelist;
     static ArrayList<String> noteslist;
     
     public static void main(String[] args){
         
-        bookshelf = new ArrayList<String>();
+        titlelist = new ArrayList<String>();
+        authorlist = new ArrayList<String>();
+        pagelist = new ArrayList<Integer>();
         noteslist = new ArrayList<String>();
         
         System.out.println("##### ADDING A BOOK #####");
@@ -51,9 +55,9 @@ public class BookShelf {
     }
     
     public static void addBook(String title, String author, int pages){
-        bookshelf.add(title);
-        
-        System.out.println(bookshelf.get(0));
+        titlelist.add(title);
+        authorlist.add(author);
+        pagelist.add(pages);
     }
     
     public static void getBookDetails(String title, String author, int pages){

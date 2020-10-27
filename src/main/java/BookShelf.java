@@ -40,7 +40,7 @@ public class BookShelf {
             getMenu(); //get menu method
             
             switch (option) {
-                case "1":
+                case "1" -> {
                     System.out.println("##### ADDING A BOOK #####");
                     
                     //book name
@@ -54,36 +54,33 @@ public class BookShelf {
                     //number of pages
                     System.out.println("Pages: ");
                     pages = input.nextLine();
-                
+                    
                     addBook(title, author, pages);
-                    
-                    break;
-                case "2":
+                }
+                case "2" -> {
                     System.out.println("##### REMOVING A BOOK ######");
-                    
                     //removeBook();
-                    break;
-                case "3":
+                }
+                case "3" -> {
                     System.out.println("##### YOUR BOOK LIST #####");
                     
                     getBooksList();
-                    break;
-                case "4":
+                }
+                case "4" -> {
                     System.out.println("##### SELECT A BOOK #####");
                     
-                    int i = 0;
-                    for(i = 0; i < titlelist.size(); i++){
+                    for(int i = 0; i < titlelist.size(); i++){
                         int bookNumber = i+1;
                         System.out.println(titlelist.get(i) + " - " + bookNumber);
                     }
                     
                     System.out.println();
                     //System.out.println("Enter the book number: ");
-                    
-                    break;
-                default:
+                }
+                default -> {
                     System.out.println("Quitting.....");
                     System.exit(0);
+                }
             }
         }//end while
         
@@ -101,8 +98,7 @@ public class BookShelf {
     }
     
     public static void getBooksList(){
-        int i = 0;
-        for(i = 0; i < titlelist.size(); i++){
+        for(int i = 0; i < titlelist.size(); i++){
             int bookNumber = i+1; //booknumber for loop info
             System.out.println("Book number " + bookNumber);
             System.out.println("Title: " + titlelist.get(i));

@@ -66,7 +66,20 @@ public class BookShelf {
                 case "3":
                     System.out.println("##### YOUR BOOK LIST #####");
                     
-                    //getBooksList();
+                    getBooksList();
+                    break;
+                case "4":
+                    System.out.println("##### SELECT A BOOK #####");
+                    
+                    int i = 0;
+                    for(i = 0; i < titlelist.size(); i++){
+                        int bookNumber = i+1;
+                        System.out.println(titlelist.get(i) + " - " + bookNumber);
+                    }
+                    
+                    System.out.println();
+                    //System.out.println("Enter the book number: ");
+                    
                     break;
                 default:
                     System.out.println("Quitting.....");
@@ -81,7 +94,21 @@ public class BookShelf {
         authorlist.add(author);
         pagelist.add(pages);
         
-        System.out.println(titlelist.get(0) + "\n" + authorlist.get(0) + "\n" + pagelist.get(0));
+        /*System.out.println(titlelist.get(0) + "\n"
+                + authorlist.get(0) + "\n"
+                + pagelist.get(0));
+        */
+    }
+    
+    public static void getBooksList(){
+        int i = 0;
+        for(i = 0; i < titlelist.size(); i++){
+            int bookNumber = i+1; //booknumber for loop info
+            System.out.println("Book number " + bookNumber);
+            System.out.println("Title: " + titlelist.get(i));
+            System.out.println("Author: " + authorlist.get(i));
+            System.out.println("Pages: " + pagelist.get(i));
+        }
     }
     
     public static void getBookDetails(String title, String author, String pages){
@@ -96,7 +123,9 @@ public class BookShelf {
         System.out.println("Welcome to your book library.");
         System.out.println("1. Add a book. \n"
                 + "2. Remove a book. \n"
-                + "3. Show all books.");
+                + "3. Show all books. \n"
+                + "4. Select a book. \n"
+                + "Press Enter to quit.");
         System.out.println("Enter your option: ");
         option = input.nextLine();
     }

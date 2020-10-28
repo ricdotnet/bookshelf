@@ -29,6 +29,8 @@ public class BookShelf {
     static ArrayList<String> pagelist;
     static ArrayList<String> noteslist;
     
+    String adriana = "Adriana";
+    
     public static void main(String[] args){
         
         titlelist = new ArrayList<>();

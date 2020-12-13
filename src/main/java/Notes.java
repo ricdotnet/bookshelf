@@ -3,10 +3,12 @@
  * @author ricdotnet
  */
 
-import java.util.ArrayList;
-
 public class Notes {
 
-    ArrayList< String > book_notes = new ArrayList< String >();
+    String note;
+
+    public Notes(String note, int teste) {
+        this.note = note;
+    }
 
 } //end main class

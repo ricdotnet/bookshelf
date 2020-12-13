@@ -3,35 +3,15 @@
  * @author ricdotnet
  */
 
-import java.util.*;
-
 public class BookShelf {
     
     static Scanner input = new Scanner(System.in);
-    
-    //book details
-    static String title;
-    static String author;
-    static String pages;
-    static boolean read;
-    static String notes;
+
+    static Book books = new Book(); //create object from Book.java
     
     static String option; //variable for option selection
     
-    //bookshelf array
-    static ArrayList<String> titlelist;
-    static ArrayList<String> authorlist;
-    static ArrayList<String> pagelist;
-    static ArrayList<String> noteslist;
-    
-    String adriana = "Adriana";
-    
     public static void main(String[] args){
-        
-        titlelist = new ArrayList<>();
-        authorlist = new ArrayList<>();
-        pagelist = new ArrayList<>();
-        noteslist = new ArrayList<>();
         
         while(true){
             getMenu(); //get menu method

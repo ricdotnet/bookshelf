@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * BookShelf.java class (main class)
+ * @author ricdotnet
  */
 
 import java.util.*;
 
-/**
- *
- * @author ricardorocha
- */
 public class BookShelf {
     
     static Scanner input = new Scanner(System.in);

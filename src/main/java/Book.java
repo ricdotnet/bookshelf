@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class Book {
 
-    ArrayList<Notes> notes = new ArrayList<Notes>();
+    ArrayList<Notes> notes;
 
     //book insert variables
     String book_title;
@@ -15,7 +15,7 @@ public class Book {
     int book_pages;
     boolean book_read;
 
-    public Book(String book_title, String book_author, int book_pages, boolean book_read, ArrayList<String> notes) {
+    public Book(String book_title, String book_author, int book_pages, boolean book_read, ArrayList<Notes> notes) {
         this.book_title = book_title;
         this.book_author = book_author;
         this.book_pages = book_pages;

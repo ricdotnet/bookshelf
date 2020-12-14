@@ -22,14 +22,23 @@ public class Book {
         this.book_read = false; //sets to false by default
     }
 
-    void addNote() {
+    // void addNote(String note) {
 
-        String note = "kshvnsndvsl;dkmnv";
+    //     Notes new_note = Notes(note);
 
-        Notes new_note = Notes(note, 15);
+    //     notes.add(new_note);
 
-        notes.add(new_note);
+    // }
 
+    //override print of book details.
+    //in this method i choose how to print the book details.
+    //i won't print notes here. will be a separate method
+    //the user will be able to add notes based on the book id / book
+    @Override
+    public String toString() {
+        return "Book Title: " + book_title + "\n"
+        + "Book Author: " + book_author + "\n"
+        + "Nr of Pages: " + book_pages;
     }
 
 } //end main class

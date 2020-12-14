@@ -7,7 +7,8 @@ public class Notes {
 
     String note;
 
-    public Notes(String note, int teste) {
+    //note constructor
+    public Notes(String note) {
         this.note = note;
     }
 
